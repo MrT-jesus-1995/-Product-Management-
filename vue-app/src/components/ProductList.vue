@@ -295,7 +295,7 @@ const isLowStock = (stock: number): boolean => {
           <td>{{ product.name }}</td>
           <td>{{ product.sku }}</td>
           <td>{{ product.price.toFixed(2) }}</td>
-          <td :class="{ 'low-stock': product.stock > 0 && product.stock <= 5 }">
+          <td :class="{ 'low-stock': product.stock > 0 && product.stock < 10 }">
             {{ product.stock }}
           </td>
           <td>{{ product.category }}</td>
@@ -433,7 +433,7 @@ h1 {
 
 /* สต็อกใกล้หมด - สีแดงและตัวหนา */
 .low-stock {
-  color: #e74c3c;
+  color: #e74c3c !important;
   font-weight: bold;
 }
 
