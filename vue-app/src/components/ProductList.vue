@@ -168,20 +168,6 @@ const addProduct = () => {
   alert(' เพิ่มสินค้าสำเร็จ!')
 }
 
-// ฟังก์ชันจัดรูปแบบราคา
-const formatPrice = (price: number): string => {
-  return price.toFixed(2)
-}
-
-// เช็คว่าสินค้าหมดหรือไม่
-const isOutOfStock = (stock: number): boolean => {
-  return stock === 0
-}
-
-// เช็คว่าสินค้าใกล้หมดหรือไม่
-const isLowStock = (stock: number): boolean => {
-  return stock > 0 && stock < 10
-}
 </script>
 
 <template>
